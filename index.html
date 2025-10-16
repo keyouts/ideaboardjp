@@ -9,23 +9,22 @@
 <body>
   <div class="toolbar">
     <div class="toolbar-row">
-      <button id="addNote">メモを追加</button>
-      <button id="deleteNote">選択したメモを削除</button>
-      <select id="tagFilter">
+      <button id="addNote" aria-label="新しいメモを追加">メモを追加</button>
+      <button id="deleteNote" aria-label="選択したメモを削除">選択したメモを削除</button>
+      <select id="tagFilter" aria-label="タグでメモをフィルター">
         <option value="all">すべて表示</option>
       </select>
     </div>
     <div class="toolbar-row">
-      <input type="text" id="newTagInput" placeholder="新しいタグ名" />
-      <button id="createTag">タグを作成</button>
-      <select id="tagDeleteSelect"></select>
-      <button id="deleteTag">タグを削除</button>
+      <input type="text" id="newTagInput" placeholder="新しいタグ名" aria-label="新しいタグ名を入力" />
+      <button id="createTag" aria-label="新しいタグを作成">タグを作成</button>
+      <select id="tagDeleteSelect" aria-label="削除するタグを選択"></select>
+      <button id="deleteTag" aria-label="選択したタグを削除">タグを削除</button>
     </div>
   </div>
 
-  <div id="board"></div>
+  <div id="board" aria-label="メモボード"></div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
